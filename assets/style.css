@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sacramento&family=Tangerine&display=swap');
+
+:root {
+    --gold: #E2C27D;
+    --brown: rgb(64, 47, 29);
+    --black: rgba(26, 24, 24, 0.93);
+    --blue:  #2f405a;
+    --silver: #C0C0C0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.divider {
+    background-image: url(images/blue-grey-cover.jpg);
+    height: 10vh;   
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 50px;
+    gap: 122px;
+    position: absolute;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    background-color: #2f405a;
+}
+
+nav a {
+    
+}
+
+.logo {
+    width: 159px;
+    height: 32px;
+    color: var(--gold);
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px 1px;
+    height: 40px;
+    width: 495px;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 11px;
+    gap: 20px;
+    width: 488px;
+    height: 34px;
+    color: var(--gold);
+}
+
+
+.links .pages a {
+    color: var(--silver);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.links .pages a:hover {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+    position: relative;
+    top: 1.5px;
+}
+
+.links .pages li .bio:hover {
+    border-bottom: unset;
+    position: unset;
+}
+
+.links .pages li .disco:hover {
+    border-bottom: unset;
+    position: unset;
+}
+
+.links .pages li .eventos:hover {
+    border-bottom: unset;
+    position: unset;
+}
+
+.links .pages li .contacto:hover {
+    border-bottom: unset;
+    position: unset;
+}
+
+.links .pages li .contrata:hover {
+    border-bottom: unset;
+    position: unset;
+}
+
+.links .pages li .management:hover {
+    border-bottom: unset;
+    position: unset;
+}
+
+/* INDEX */
+
+
+.hero-content {
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.452), rgba(222, 211, 199, 0.438)), url(images/city-night-1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+}
+
+.hero-content img{
+    height: 70vh;
+    width: 60vw;
+}
+
+
+.home-video {
+    background-image: url(images/floral-dark-cover.jpg);
+    background-size: contain;
+    height: 60vh;
+}
+
+.home-sponsor {
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.75), rgba(222, 211, 199, 0.75)), url(images/sponsor-backgound.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+}
+
+.sponsor-content {
+    width: 100%;
+    height: 60vh;
+}
+
+.sponsor-text {
+    width: 35%;
+    font-family: 'Sacramento', cursive;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 35px;
+    color: var(--brown);
+}
+
+
+.sponsor-image-1 {
+    
+}
+
+.sponsor-image-1 img {
+    transform: rotateX(-20deg) rotateY(10deg);
+}
+
+.sponsor-image-2 {
+    height: 100%;
+}
+
+.sponsor-image-2 img {
+    transform: rotateX(20deg) rotateY(10deg);
+}
+
+
+.sponsor-header {
+    height: 10vh;
+    width: 80%;
+}
+
+.info-btn a {
+    background-color: var(--blue);
+    color: var(--gold);
+}
+
+
+/* .home-sponsor span {
+    margin: 0 0 2.5vh 18vw;
+    width: 240px;
+    height: 100px;
+    font-family: 'Sacramento', cursive;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    color: var(--brown);
+}
+
+.home-sponsor img  {
+    margin: 2.5vh 0 0 15vw;
+    width: 350px;
+    height: 285.09px;
+} */
+
+.homecard-container {
+    border: 1px solid var(--black);
+    background-size: contain;
+    background: linear-gradient(0deg, rgba(59, 58, 57, 0.75), rgba(59, 58, 57, 0.75)), url(images/seats-cover.jpg);
+    height: 80vh;
+}
+
+.home-card {
+    background-color: var(--blue);
+}
+
+.homecard-body {
+    background-color: var(--blue);
+}
+
+.homecard-text {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* BIO */
+
+
+.bio-hero {
+    background-image:   linear-gradient(0deg, rgba(222, 211, 199, 0.521), rgba(222, 211, 199, 0.534)), url(images/zellige_granada.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.bio-hero  img{
+    height: 70vh;
+}
+
+.bio-content {
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.75), rgba(222, 211, 199, 0.75)), url(images/madrid.jpg);
+    background-size: cover;
+    height: 1300px;
+} 
+
+
+.photo-container-1 {
+    background-color: whitesmoke;
+    width: 600px;
+    height: 350px;
+    transform: rotate(-8deg);
+    box-shadow: 0.5rem 1rem #00000027;
+}
+
+.photo-container-1 img {
+    height: 80%;
+    width: 90%;
+}
+
+.text-container-1 {
+    height: 422px;
+    width: 738px;
+}
+
+.text-container-2 {
+    height: 422px;
+    width: 738px;
+}
+
+.photo-container-2 {
+    background-color: whitesmoke;
+    width: 900px;
+    height: 500px;
+    transform: rotate(8deg);
+    box-shadow: 0.5rem 1rem #00000027;
+}
+
+
+.bio-img-2 {
+    background-image: url(images/antnio-con-paco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 80%;
+}
+
+
+.bio-video {
+    background-image: url(images/cover-tile.jpg);
+    height: 80vh;
+}   
+
+/* DISCOGRAFIA */
+
+.disco-hero {
+    background:  linear-gradient(0deg, rgba(222, 211, 199, 0.068), rgba(222, 211, 199, 0.075)), url(images/waves_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.disco-hero-items {
+    width: 80vw;
+    justify-content: space-around;
+}
+
+.album {
+    height: 60vh;
+}
+
+.grammy {
+    height: 35vh;
+    width: 35vw;
+    transform: rotateX(20deg) rotateY(10deg);
+}
+
+.disco-content {
+    height: calc(100vh-45px);
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/al-hambra-pillars.jpg);
+}
+
+
+
+.albums-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 40%;
+}
+
+
+.albums-container .album-box {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* margin: 2rem; */
+    /* box-shadow: 0.5rem 1rem #000; */
+}
+
+/*  */
+.albums-container .album-box .cover  {
+    height: 100%;
+    width: 48%;
+    /* border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; */
+}
+
+.albums-container .album-box .cover .btn {
+    border: none;
+    height: 100%;
+    padding: 0;
+    /* border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; */
+}
+
+.albums-container .album-box .cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; */
+}
+
+/*  */
+
+
+.albums-container .album-box .track{
+    height: 100%;
+    width: 52%;
+    background-color: whitesmoke;
+    /* dont add d-flex */
+    /* border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+}
+/* 
+.vinyl {
+    background-color: whitesmoke;
+    width: 40%;
+}
+
+.vinyl img {
+    font-size: 10rem;
+} */
+
+.albums-container .album-box .music {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+}
+
+.albums-container .album-box .music audio {
+    width: 100%;
+    outline: none;
+}
+
+.albums-container .album-box .music audio audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+
+
+.albums-container .album-box .track .track-list {
+    width: 100%;
+}
+
+.albums-container .album-box .track .track-list li{
+    width: 100%;
+}
+
+
+/* EVENTOS  */
+
+
+
+.eventos-section {
+    height: 800px;
+
+}
+
+.eventos-card-row {
+    display: flex;
+
+}
+
+.eventos-card-body {
+    
+}
+
+/* CONTACTO */
+
+.contacto-hero {
+    background:  linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+}
+
+.contacto-hero img {
+    height: 70vh;
+}
+
+.contacto-container {
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)),  url(images/cadiz_streets.jpg);
+    height: 100vh;
+}
+
+form {
+    width: 80vw;
+    color: whitesmoke;
+}
+
+form input {
+
+}
+
+
+
+
+/* CONTRATA */
+
+.contrata-hero {
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/alhambra-granada-andalusia-spain.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.contrata-content {
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/teatro-real.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+
+.contrata-vid {
+}
+
+.contrata-txt {
+
+}
+
+/* MANAGEMENT */
+
+.mngmnt-hero {
+    background-image: url(images/spain-cadiz-sea-mediterranean.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+#more {display: none;}
+
+.mngmnt-content {
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/mesa-bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1400px;
+}
+
+.about-mngmnt {
+    width: 40vw;
+}
+
+.about-carousel {
+    
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--blue);
+}
+
+
+.social {
+    width: 305px;
+    height: 25px;
+    margin: 5px 11px;
+
+}
+
+.social a {
+    color: var(--gold);
+}
+
+
+footer p {
+    background-color: var(--blue);
+}
+
+
+
+@media (max-width: 846px) {
+    /* .nav-bar {
+        display: none;
+    }  */
+    .links {
+        display: none;
+    }
+    /* .navbar-collapse {
+        display: flex;
+    } */
+}
+
+@media (max-width: 673px) {
+    /* .nav-bar {
+        display: none;
+    } */
+
+
+    /* INDEX */
+
+    .homecard-container {
+        height: 100%;
+    }
+
+    .home-card-row {
+        width: 100%;
+    }
+
+    .homecard {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        margin-right: 5vw;
+        height: 15rem;
+        width: 17rem;
+    }
+
+    .homecard img {
+        
+    }
+
+    /* DISCOGRAFIA */
+
+    .albums-container .box {
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+    }
+    
+    .albums-container .box .image {
+        height: 80%;
+        width: 100%;
+    }
+
+    .albums-container .box .music {
+        height: 20%;
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    footer ul {
+        flex-direction: column;
+    }
+
+}
+
+
+/* child */
+
+/* .aa:nth-child(2) {
+
+    transition-delay: 200ms;
+
+}
+
+.aa:nth-child(3) {
+
+    transition-delay: 300ms;
+
+}
+
+.aa:nth-child(4) {
+
+    transition-delay: 400ms;
+
+} */
+
