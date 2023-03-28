@@ -309,7 +309,7 @@ nav a {
 /* DISCOGRAFIA */
 
 .disco-hero {
-    background:  linear-gradient(0deg, rgba(222, 211, 199, 0.068), rgba(222, 211, 199, 0.075)), url(images/waves_1920.jpg);
+    background:  linear-gradient(0deg, rgba(222, 211, 199, 0.425), rgba(222, 211, 199, 0.425)), url(images/waves_1920.jpg);
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -524,7 +524,7 @@ form .btn {
 /* MANAGEMENT */
 
 .mngmnt-hero {
-    background-image: url(images/spain-cadiz-sea-mediterranean.jpg);
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/spain-cadiz-sea-mediterranean.jpg);
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -590,17 +590,20 @@ footer p {
 
 
 @media (max-width: 1400px) {
+
+    /* HOME */
     .home-sponsor {
         background-position: right;
     }
     .sponsor-content {
-        
+        height: 80%;
     }
     .sponsor-image-1 {
         order: 2;
         position: relative;
         left: -70px;
         z-index: 1;
+        height: 100%;
     }
     .sponsor-text {
         order: 3;
@@ -613,6 +616,7 @@ footer p {
     .sponsor-image-1 img {
         transform: rotateX(-20deg) rotateY(10deg);
         box-shadow: -30px 30px 30px 30px rgba(0, 0, 0, 0.253);
+
     }
 
     .sponsor-text span {
@@ -626,8 +630,10 @@ footer p {
     }
     
     .sponsor-header {
+        height: 20%;
     }
 
+    /* HOME */
 
 }
 
