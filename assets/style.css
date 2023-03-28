@@ -165,13 +165,13 @@ nav a {
     color: var(--brown);
 }
 
-
 .sponsor-image-1 {
     
 }
 
 .sponsor-image-1 img {
     transform: rotateX(-20deg) rotateY(10deg);
+    box-shadow: -30px 30px 30px 30px rgba(0, 0, 0, 0.253);
 }
 
 .sponsor-image-2 {
@@ -180,12 +180,14 @@ nav a {
 
 .sponsor-image-2 img {
     transform: rotateX(20deg) rotateY(10deg);
+    box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.253);
 }
 
 
 .sponsor-header {
     height: 10vh;
     width: 80%;
+    color: var(--brown);
 }
 
 .info-btn a {
@@ -269,16 +271,20 @@ nav a {
 .text-container-1 {
     height: 422px;
     width: 738px;
+    color: var(--brown);
+    font-weight: 500;
 }
 
 .text-container-2 {
     height: 422px;
     width: 738px;
+    color: var(--brown);
+    font-weight: 500;
 }
 
 .photo-container-2 {
     background-color: whitesmoke;
-    width: 900px;
+    width: 700px;
     height: 500px;
     transform: rotate(8deg);
     box-shadow: 0.5rem 1rem #00000027;
@@ -460,18 +466,27 @@ nav a {
 .contacto-container {
     background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)),  url(images/cadiz_streets.jpg);
     height: 100vh;
+    width: 80vw;
 }
 
 form {
-    width: 80vw;
-    color: whitesmoke;
+    width: 50vw;
+    color: var(--brown);
+    font-weight: 600;
 }
 
-form input {
-
+form .btn {
+    background-color: var(--blue);
+    color: var(--gold);
 }
 
+.content-img {
+    width: 50vw;
+}
 
+.content-img img {
+    width: 90%;
+}
 
 
 /* CONTRATA */
@@ -482,8 +497,14 @@ form input {
     background-position: center;
     height: 70vh;
 }
+
+.contrata-hero img {
+    height: 70vh;
+}
+
+
 .contrata-content {
-    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/teatro-real.jpg);
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.685), rgba(222, 211, 199, 0.699)), url(images/teatro-real.jpg);
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -491,10 +512,13 @@ form input {
 
 
 .contrata-vid {
+    width: 40%;
 }
 
 .contrata-txt {
-
+    color: var(--brown);
+    font-weight: 700;
+    width: 40%;
 }
 
 /* MANAGEMENT */
@@ -506,18 +530,32 @@ form input {
     height: 70vh;
 }
 
-#more {display: none;}
 
 .mngmnt-content {
-    background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/mesa-bg-img.jpg);
+    background: linear-gradient(0deg, rgba(222, 211, 199, 0.685), rgba(222, 211, 199, 0.637)), url(images/mesa-bg-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 1400px;
+    height: 1800px;
 }
 
 .about-mngmnt {
     width: 40vw;
+}
+
+#more {
+    display: none;
+}
+
+.about-txt {
+    color: var(--brown);
+    width: 90%;
+    font-weight: 400;
+}
+
+.about-txt button {
+    background-color: var(--blue);
+    color: var(--gold);
 }
 
 .about-carousel {
@@ -550,6 +588,48 @@ footer p {
     background-color: var(--blue);
 }
 
+
+@media (max-width: 1400px) {
+    .home-sponsor {
+        background-position: right;
+    }
+    .sponsor-content {
+        
+    }
+    .sponsor-image-1 {
+        order: 2;
+        position: relative;
+        left: -70px;
+        z-index: 1;
+    }
+    .sponsor-text {
+        order: 3;
+        display: none;
+    }
+    .sponsor-image-2 {
+        order: 1;
+    }
+
+    .sponsor-image-1 img {
+        transform: rotateX(-20deg) rotateY(10deg);
+        box-shadow: -30px 30px 30px 30px rgba(0, 0, 0, 0.253);
+    }
+
+    .sponsor-text span {
+        display: none;
+    }
+    
+    .sponsor-image-2 img {
+        transform: rotateX(-20deg) rotateY(10deg);
+        box-shadow: -30px 30px 30px 30px rgba(0, 0, 0, 0.253);
+
+    }
+    
+    .sponsor-header {
+    }
+
+
+}
 
 
 @media (max-width: 846px) {
