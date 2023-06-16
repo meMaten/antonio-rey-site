@@ -129,6 +129,7 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     height: 80vh;
+    background-attachment: fixed;
 }
 
 .hero-content img{
@@ -242,6 +243,7 @@ nav a {
     background-position: center;
     height: 80vh;
     width: 100%;
+    background-attachment: fixed;
 }
 
 .bio-hero  img{
@@ -313,6 +315,7 @@ nav a {
     background-size: cover;
     background-position: center;
     height: 80vh;
+    background-attachment: fixed;
 }
 
 .disco-hero-items {
@@ -437,7 +440,6 @@ nav a {
 
 .eventos-section {
     height: 800px;
-
 }
 
 .eventos-card-row {
@@ -527,7 +529,8 @@ form .btn {
     background: linear-gradient(0deg, rgba(222, 211, 199, 0.5), rgba(222, 211, 199, 0.486)), url(images/spain-cadiz-sea-mediterranean.jpg);
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 80vh;
+    background-attachment: fixed;
 }
 
 
